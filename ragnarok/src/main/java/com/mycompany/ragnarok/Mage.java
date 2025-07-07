@@ -24,6 +24,5 @@ public class Mage extends Character {
     public void addXP(int xp) {
         super.addXP(xp * 2); // XP lebih cepat naik
     }
-    
 }
 

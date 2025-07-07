@@ -33,21 +33,21 @@ public class Game {
             player = new Mage(name);
         }
 
-        System.out.println("\nHalo " + player.getName() + ",Apakah kamu sudah siap menjadi Pahlawan Penyelamat Dunia? Petualanganmu dimulai sekarang!");
+        System.out.println("\nHalo " + player.getName() + ", petualanganmu dimulai sekarang!");
 
         // scene
-        // Scene 1 - Desa Prontera
+                // Scene 1 - Desa
         Scene scene1 = new Scene(
-            "Kamu saat ini sebagai petualang berada di desa Prontera.",
-            "Pergi ke huta Payon", "Tetap di desa Prontera", "Cari barang",
+            "Kamu berada di desa damai.",
+            "Pergi ke hutan", "Tetap di desa", "Cari barang",
             0, 0, 0,
             0, 0, 0
         );
 
-        // Scene 2 - Hutan Payon
+        // Scene 2 - Hutan awal
         Scene scene2 = new Scene(
-            "Kamu masuk ke hutan Payon.Tiba - tiba seekor monster muncul!",
-            "Serang monster itu", "Kabur ke Desa terdekat", "Sembunyi dari Monster",
+            "Kamu masuk ke hutan. Seekor monster muncul!",
+            "Serang monster", "Kabur", "Sembunyi",
             20, 0, 10,
             10, 0, 5
         );
@@ -55,62 +55,62 @@ public class Game {
         // Scene 3 - Peti harta
         Scene scene3 = new Scene(
             "Kamu menemukan peti harta karun.",
-            "Ambil harta tersebut", "Lewati saja", "Hancurkan peti tersebut",
+            "Ambil harta", "Lewati", "Hancurkan peti",
             0, 0, 10,
             20, 0, 5
         );
 
-        // Scene 4 - Hutan gelap Geffen
+        // Scene 4 - Hutan gelap
         Scene scene4 = new Scene(
-            "Perjalan menuju Hutan Geffen begitu menguras tenaga. Pagi,Siang sudah berlalu. Hutan semakin gelap dan menyeramkan...",
-            "Terus lanjut jalan", "Berbalik Arah", "Pasang perangkap untuk bersiaga",
+            "Hutan semakin gelap dan menyeramkan...",
+            "Lanjut jalan", "Berbalik", "Pasang perangkap",
             10, 0, 5,
             10, 0, 10
         );
 
-        // Scene 5 - Sungai Izlude
+        // Scene 5 - Sungai ajaib
         Scene scene5 = new Scene(
-            "Hari telah berlalu Menegangkan.Kamu telah sampai di sungai Izlude. Apa yang akan kamu lakukan ?",
-            "Seberangi sungai tersebut", "Menunggu Hal Ajaib datang", "Lempar batu ke Sungai",
+            "Kamu sampai di sungai bercahaya biru.",
+            "Seberangi sungai", "Menunggu", "Lempar batu",
             15, 0, 5,
             15, 0, 5
         );
 
-        // Scene 6 - Goa Morroc
+        // Scene 6 - Gua misterius
         Scene scene6 = new Scene(
-            "Kamu telah sampai di Morroc! Ada Goa misterius dengan cahaya aneh di Morroc...",
-            "Masuk ke dalam Goa", "Istirahat di luar Goa", "Intai saja",
+            "Ada gua misterius dengan cahaya aneh.",
+            "Masuk ke dalam", "Istirahat di luar", "Intai dari jauh",
             20, 0, 10,
             20, 0, 5
         );
 
-        // Scene 7 - Lorong bawah tanah Morroc
+        // Scene 7 - Lorong bawah tanah
         Scene scene7 = new Scene(
-            "Lorong bawah tanah Morroc gelap dan panjang.Ini Semakin melelahkan...",
-            "Terus masuk menyusuri Lorong", "Balik ke atas", "Ledakkan pintu misterius tersebut",
+            "Lorong bawah tanah gelap dan panjang.",
+            "Masuk lorong", "Balik ke atas", "Ledakkan pintu",
             15, 0, 20,
             15, 0, 25
         );
 
-        // Scene 8 - Labirin Paraoh
+        // Scene 8 - Ruang puzzle
         Scene scene8 = new Scene(
-            "Tiba - tiba Hal aneh terjadi! Terjadi tabrakan dimensi didalam lorong.Kamu masuk ke ruangan Labirin Paraoh!",
-            "Pecahkan teka-teki", "Pasrah saja", "Hancurkan semuanya",
+            "Kamu masuk ke ruangan penuh teka-teki.",
+            "Pecahkan teka-teki", "Lewati saja", "Hancurkan semuanya",
             10, 0, 25,
             30, 0, 5
         );
 
-        // Scene 9 - Gerbang bos Baphomet
+        // Scene 9 - Gerbang bos
         Scene scene9 = new Scene(
-            "Misteri terpecahkan! Baphomet Dalang yang ingin menghancurkan Dunia! Gerbang raksasa berdiri di depanmu..",
-            "Masuki arena", "Siapkan perlengkapan", "Intai saja",
+            "Gerbang raksasa berdiri di depanmu.",
+            "Masuki arena", "Siapkan perlengkapan", "Intip dari jauh",
             10, 0, 5,
             10, 0, 5
         );
 
         // Scene 10 - Boss terakhir
         Scene scene10 = new Scene(
-            "Bos terakhir muncul: Baphomet The Abyss!",
+            "Bos terakhir muncul: Naga Kegelapan!",
             "Lawan langsung", "Gunakan item", "Negosiasi",
             50, 20, 10,
             100, 30, 20
@@ -118,8 +118,8 @@ public class Game {
 
         // Scene akhir / kemenangan
         Scene sceneEnd = new Scene(
-            "Kamu mengalahkan Baphomet dan menyelamatkan dunia!",
-            "Rayakan Kemenangan", "Istirahat", "Kembali ke desa Prontera",
+            "Kamu mengalahkan sang naga dan menyelamatkan dunia!",
+            "Rayakan", "Istirahat", "Kembali ke desa",
             0, 0, 0,
             0, 0, 0
         );
